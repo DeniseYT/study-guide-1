@@ -131,7 +131,16 @@ def largest_int(numbers):
         True
     """
 
-    return 0
+    # return 0
+
+    if len(numbers) != 0:
+        new_numbers = sorted(numbers)
+        return new_numbers[-1]
+    
+    else:
+        return None
+
+print(largest_int([-5, 2, -5, 7]))
 
 
 def halvesies(numbers):
