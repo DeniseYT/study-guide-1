@@ -209,7 +209,21 @@ def sum_numbers(numbers):
         0
     """
 
-    return None
+    # return None
+
+    new_sum = 0
+
+    if len(numbers) != 0:
+        for num in numbers:
+            new_sum += num
+    
+        return new_sum
+
+    else:
+        return 0
+
+print(sum_numbers([]))
+
 
 
 def mult_numbers(numbers):
