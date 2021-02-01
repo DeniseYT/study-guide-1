@@ -158,7 +158,17 @@ def halvesies(numbers):
         [0.5, 2.5]
     """
 
-    return []
+    # return []
+
+    new_list = []
+
+    for num in numbers:
+        new_num = num / 2
+        new_list.append(new_num)
+    
+    return new_list
+
+print(halvesies([1, 5]))
 
 
 def word_lengths(words):
