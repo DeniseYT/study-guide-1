@@ -102,7 +102,16 @@ def smallest_int(numbers):
         True
     """
 
-    return 100
+    # return 100
+
+    if len(numbers) != 0:
+        new_numbers = sorted(numbers)
+        return new_numbers[0]
+    
+    else:
+        return None
+
+print(smallest_int([]))
 
 
 def largest_int(numbers):
