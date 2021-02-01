@@ -71,7 +71,18 @@ def n_long_words(words, n):
         ['apples', 'bananas']
     """
 
-    return ['the wrong thing']
+    # return ['the wrong thing']
+
+    new_list = []
+
+    for word in words:
+        if len(word) > n:
+            new_list.append(word)
+    
+    return new_list
+
+print(n_long_words(["hello", "hey", "spam", "spam", "bacon", "bacon"], 3))
+
 
 
 def smallest_int(numbers):
