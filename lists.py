@@ -180,7 +180,17 @@ def word_lengths(words):
         [5, 3, 5, 4]
     """
 
-    return []
+    # return []
+
+    new_list = []
+
+    for word in words:
+        new_list.append(len(word))
+    
+    return new_list
+
+print(word_lengths(["hello", "hey", "hello", "spam"]))
+
 
 
 def sum_numbers(numbers):
