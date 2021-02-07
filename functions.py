@@ -89,8 +89,8 @@ print(say_hi("Balloonicorn"))
 
 # 3. Write a function called 'print_product' that takes two integers and
 #    multiplies them together. Print the result.
->>> print_product(3, 5)
-    15
+# >>> print_product(3, 5)
+#     15
 def print_product(num1, num2):
     return num1 * num2
 print(print_product(3, 5))
