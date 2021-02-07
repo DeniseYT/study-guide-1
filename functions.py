@@ -82,13 +82,18 @@ print(hello_world())
 #    prints "Hi" followed by the name.
 def say_hi(name):
 
-    return "Hi" + {name}
+    return "Hi" + " " + name
 
 print(say_hi("Balloonicorn"))
 
 
 # 3. Write a function called 'print_product' that takes two integers and
 #    multiplies them together. Print the result.
+>>> print_product(3, 5)
+    15
+def print_product(num1, num2):
+    return num1 * num2
+print(print_product(3, 5))
 
 
 # 4. Write a function called 'repeat_string' that takes a string and an integer
