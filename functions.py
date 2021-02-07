@@ -113,6 +113,20 @@ print(repeat_string("Balloonicorn", 3))
 #    "Higher than 0" if higher than zero and "Lower than 0" if lower than zero.
 #    If the integer is zero, print "Zero".
 
+#   >>> print_sign(3)
+#     Higher than 0
+
+def print_sign(int):
+
+    if int > 0:
+        return "Higher than 0"
+    elif int < 0:
+        return "Lower than 0"
+    else:
+        return "Zero"
+
+print(print_sign(0))
+
 
 # 6. Write a function called 'is_divisible_by_three' that takes an integer and
 #    returns a boolean (True or False), depending on whether the number is
