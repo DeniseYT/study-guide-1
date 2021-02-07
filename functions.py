@@ -202,6 +202,22 @@ print(total_meal_price(30, .3))
 #    unpack what is returned into two variables --- sign and parity (whether
 #    it's even or odd). Print sign and parity.
 
+#   >>> sign_and_parity(3)
+#     ['Positive', 'Odd']
+
+#     >>> sign_and_parity(-2)
+#     ['Negative', 'Even']
+
+def sign_and_parity(int):
+
+    if int > 0 and int / 2 != 0:
+        return ["Positive", "Odd"]
+    elif int < 0 and int / 2 == 0:
+        return ["Negative", "Even"]
+
+print(sign_and_parity(3))
+
+
 
 ###############################################################################
 
