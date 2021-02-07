@@ -89,8 +89,10 @@ print(say_hi("Balloonicorn"))
 
 # 3. Write a function called 'print_product' that takes two integers and
 #    multiplies them together. Print the result.
+
 # >>> print_product(3, 5)
 #     15
+
 def print_product(num1, num2):
     return num1 * num2
 print(print_product(3, 5))
@@ -98,6 +100,13 @@ print(print_product(3, 5))
 
 # 4. Write a function called 'repeat_string' that takes a string and an integer
 #    and prints the string that many times
+
+#  >>> repeat_string("Balloonicorn", 3)
+#     BalloonicornBalloonicornBalloonicorn
+
+def repeat_string(str, int):
+    return str * int
+print(repeat_string("Balloonicorn", 3))
 
 
 # 5. Write a function called 'print_sign' that takes an integer and prints
