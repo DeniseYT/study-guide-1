@@ -227,6 +227,17 @@ print(sign_and_parity(3))
 #    parameters, making it so the job title defaults to "Engineer" if a job
 #    title is not passed in. Return the person's title and name in one string.
 
+    # >>> full_title("Balloonicorn")
+    # 'Engineer Balloonicorn'
+
+    # >>> full_title("Jane Hacks", "Hacker")
+    # 'Hacker Jane Hacks'
+
+def full_title(name, job="Engineer"):
+    return job + " " + name
+print(full_title("Jane Hacks", "Hacker"))
+
+
 # 2. Write a function called write_letter that, given a recipient name & job
 #    title and a sender name, prints the following letter:
 #
@@ -235,6 +246,9 @@ print(sign_and_parity(3))
 #
 #    Use the function from #1 to construct the full title for the letter's
 #    greeting.
+
+    # >>> write_letter("Jane Hacks", "Hacker", "Balloonicorn")
+    # Dear Hacker Jane Hacks, I think you are amazing! Sincerely, Balloonicorn
 
 
 ###############################################################################
