@@ -245,8 +245,18 @@ def mult_numbers(numbers):
         >>> mult_numbers([])
         1
     """
+    i = 0
+    for i in range(len(numbers)-1):
+        if 0 in numbers:
+            return 0
+        elif len(numbers) == 0:
+            return 1
+        else:
+            new_num = numbers[i] * numbers[i+1]
+    return new_num
 
-    return None
+# Have issue if numbers == [], not return 1
+print(mult_numbers([1, 2, 3]))
 
 
 def join_strings(words):
