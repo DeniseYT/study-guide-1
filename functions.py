@@ -113,8 +113,14 @@ print(repeat_string("Balloonicorn", 3))
 #    "Higher than 0" if higher than zero and "Lower than 0" if lower than zero.
 #    If the integer is zero, print "Zero".
 
-#   >>> print_sign(3)
-#     Higher than 0
+    # >>> print_sign(3)
+    # Higher than 0
+
+    # >>> print_sign(0)
+    # Zero
+
+    # >>> print_sign(-3)
+    # Lower than 0
 
 def print_sign(int):
 
@@ -131,6 +137,21 @@ print(print_sign(0))
 # 6. Write a function called 'is_divisible_by_three' that takes an integer and
 #    returns a boolean (True or False), depending on whether the number is
 #    evenly divisible by 3.
+
+    # >>> is_divisible_by_three(12)
+    # True
+
+    # >>> is_divisible_by_three(10)
+    # False
+
+def is_divisible_by_three(int):
+
+    if int % 3 == 0:
+        return True
+    else:
+        return False
+
+print(is_divisible_by_three(10))
 
 
 # 7. Write a function called 'num_spaces' that takes a sentence as one string
