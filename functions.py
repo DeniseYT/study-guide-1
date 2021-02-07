@@ -157,11 +157,40 @@ print(is_divisible_by_three(10))
 # 7. Write a function called 'num_spaces' that takes a sentence as one string
 #    and returns the number of spaces.
 
+#   >>> num_spaces("Balloonicorn is awesome!")
+#     2
+
+#     >>> num_spaces("Balloonicorn is       awesome!")
+#     8
+
+def num_spaces(str):
+
+    length = len(str)
+    return length
+
+print(num_spaces("Balloonicorn is awesome!"))
+# not complete
+    
+
 
 # 8. Write a function called 'total_meal_price' that can be passed a meal price
 #    and a tip percentage. It should return the total amount paid
 #    (price + price * tip). **However:** passing in the tip percentage should
 #    be optional; if not given, it should default to 15%.
+
+    # >>> total_meal_price(30)
+    # 34.5
+
+    # >>> total_meal_price(30, .3)
+    # 39.0
+
+def total_meal_price(price, tip=0.15):
+    
+    total_amount = price + (price * tip)
+    return total_amount
+
+print(total_meal_price(30, .3))
+
 
 
 # 9. Write a function called 'sign_and_parity' that takes an integer as an
