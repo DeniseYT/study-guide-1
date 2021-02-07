@@ -70,17 +70,21 @@ PART TWO:
 
 # 1. Write a function called 'hello_world' that does not take any arguments and
 #    prints "Hello World".
- def hello_world():
 
-    return Hello World
+def hello_world():
+
+    return "Hello World"
 
 print(hello_world())
 
 
-
-
 # 2. Write a function called 'say_hi' that takes a name as a string and
 #    prints "Hi" followed by the name.
+def say_hi(name):
+
+    return "Hi" + {name}
+
+print(say_hi("Balloonicorn"))
 
 
 # 3. Write a function called 'print_product' that takes two integers and
