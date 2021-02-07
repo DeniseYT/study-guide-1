@@ -165,12 +165,15 @@ print(is_divisible_by_three(10))
 
 def num_spaces(str):
 
-    length = len(str)
-    return length
+    space = 0
 
-print(num_spaces("Balloonicorn is awesome!"))
-# not complete
+    for char in str:
+        if char == " ":
+            space += 1
     
+    return space
+
+print(num_spaces("Balloonicorn is       awesome!"))
 
 
 # 8. Write a function called 'total_meal_price' that can be passed a meal price
@@ -234,7 +237,9 @@ print(sign_and_parity(3))
     # 'Hacker Jane Hacks'
 
 def full_title(name, job="Engineer"):
+
     return job + " " + name
+
 print(full_title("Jane Hacks", "Hacker"))
 
 
@@ -249,6 +254,15 @@ print(full_title("Jane Hacks", "Hacker"))
 
     # >>> write_letter("Jane Hacks", "Hacker", "Balloonicorn")
     # Dear Hacker Jane Hacks, I think you are amazing! Sincerely, Balloonicorn
+
+# def write_letter(name, job, sender):
+
+#     string = "Dear {job} {name}, I think you are amazing! Sincerely, {sender}"
+
+#     return string
+
+# print(write_letter(("Jane Hacks", "Hacker", "Balloonicorn")))
+# Have issue with write_letter() missing 2 required positional arguments: 'job' and 'sender'
 
 
 ###############################################################################
