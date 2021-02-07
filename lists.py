@@ -452,8 +452,16 @@ def find_letter_indices(words, letter):
     ("o" does not appear in "jumps", so the result for that input is
     `None`.)
     """
+    new_list = []
+    for i in range(len(words)):
+        if letter in words[i]:
+            new_list.append(i)
+        else:
+            new_list.append("None")
+        
+    return new_list
 
-    return []
+print(find_letter_indices(['odd', 'dog', 'who', 'jumps'], 'o'))
 
 
 #####################################################################
