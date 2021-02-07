@@ -274,8 +274,18 @@ def join_strings(words):
         >>> join_strings([])
         ''
     """
+    new_words = ""
 
-    return "Not the right thing"
+    for word in words:
+
+        if len(words) == 0:
+            return []
+        else:
+            new_words = new_words + word
+    return new_words
+
+# Have issue if numbers == [], not return 1
+print(join_strings(["spam", "spam", "bacon", "balloonicorn"]))
 
 
 def average(numbers):
