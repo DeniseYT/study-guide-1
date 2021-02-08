@@ -255,14 +255,13 @@ print(full_title("Jane Hacks", "Hacker"))
     # >>> write_letter("Jane Hacks", "Hacker", "Balloonicorn")
     # Dear Hacker Jane Hacks, I think you are amazing! Sincerely, Balloonicorn
 
-# def write_letter(name, job, sender):
+def write_letter(name, job, sender):
 
-#     string = "Dear {job} {name}, I think you are amazing! Sincerely, {sender}"
+    string = "Dear" + " " + full_title(name, job) + ", I think you are amazing! Sincerely," + " " + sender
+    
+    return string
 
-#     return string
-
-# print(write_letter(("Jane Hacks", "Hacker", "Balloonicorn")))
-# Have issue with write_letter() missing 2 required positional arguments: 'job' and 'sender'
+print(write_letter("Jane Hacks", "Hacker", "Balloonicorn"))
 
 
 ###############################################################################
